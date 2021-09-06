@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h1 {
+    margin: 50px;
+    font-size: 26.25px;
+}
+
+.menu {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.menu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.food {
+    background-color: grey;
+    border: 3px solid black;
+    padding: 20px;
+    position: relative;
+}
+
+
+.food h3 {
+    width: 150px;
+    font-size: 18.75px;
+    border: 3px solid black;
+    padding: 5px;
+    position: absolute;
+    right: -3px;
+    top: -3px; 
+}
+
+.food p {
+    margin-top: 30px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.chicken h3 {
+    background-color: pink;
+}
+
+.beef h3 {
+    color: white;
+    background-color: tomato;
+}
+
+.sushi h3 {
+    background-color: yellow;
+}
+
+@media (min-width: 992px) {
+    .col-lg-3 {
+        float: left;
+        width: calc(100%/3);
+        padding: 0 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-2 {
+        float: left;
+        width: 50%;
+    }
+
+    .col-md-1 {
+        clear: left;
+        padding: 20px 0px;
+    }
+
+    .menu > div:nth-child(1) {
+        padding-right: 10px;
+    }
+
+    .menu > div:nth-child(2) {
+        padding-left: 10px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .col-sm-1 {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
